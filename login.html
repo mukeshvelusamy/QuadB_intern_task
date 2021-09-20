@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>login</title>
+	<style>
+	body{
+		background: darkgoldenrod;
+		box-sizing: border-box;
+		top: 0;
+		right: 0;
+	}
+    form{
+    	background: #f1f1f1f1;
+    	width: 250px;
+    	text-align: center;
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%,-50%);
+    }
+    input{
+    	padding: 10px;
+    	outline: none;
+    	margin-bottom: 10px;
+    	border: none;
+    }
+    button{
+    	padding: 5px;
+    	outline: none;
+    	border: none;
+    	width: 100px;
+    	margin-bottom: 5px;
+    	background: #FF9B04 ;
+    }
+    .sign{
+    	background: #16BC2A;
+    }
+    #signup{
+    	display: none;
+    }
+    a{
+    	text-decoration: none;
+    }
+	</style>
+</head>
+<body>
+<form>
+<div id="signin">
+<h1>signin</h1>
+<input type="text" placeholder="enter name" name="username"required=""><br>
+<input type="password" name="password"placeholder="enter password" required=""><br>
+<button class="sign">signin</button><br>
+<a href="#" onclick="change()">New register?</a>
+<br>
+</div>
+<div id="signup">
+<h1>signup</h1>
+<input type="text" placeholder="enter name" name="username"required=""><br>
+<input type="text" placeholder="enter name" name="username"required=""><br>
+<input type="password" name="password"placeholder="enter password" required=""><br>
+<button>signup</button>
+<br>
+<a href="#" onclick="change1()">Already registered</a>
+<br>
+</div>
+</form>
+<script>
+	function change(){
+		document.getElementById("signin").style.display = "none";
+		document.getElementById("signup").style.display = "block";
+	}
+	function change1(){
+		document.getElementById("signup").style.display = "none";
+		document.getElementById("signin").style.display = "block";
+	}
+</script>
+</body>
+</html>
